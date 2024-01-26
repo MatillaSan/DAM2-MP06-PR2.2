@@ -2,7 +2,6 @@ package com.project;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Set;
 
 public class Ciutat implements Serializable {
 
@@ -10,7 +9,6 @@ public class Ciutat implements Serializable {
     String nom;
     String pais;
     int codiPostal;
-    private Set<Ciutada> ciutadans;
 
     public Ciutat() {
     }
@@ -51,14 +49,6 @@ public class Ciutat implements Serializable {
 
     public void setCodiPostal(int codiPostal) {
         this.codiPostal = codiPostal;
-    }
-
-    public Set<Ciutada> getCiutadans() {
-        return this.ciutadans;
-    }
-
-    public void setCiutadans(Set<Ciutada> ciutadans) {
-        this.ciutadans = ciutadans;
     }
 
     public List<Object[]> queryCiutadanss() {

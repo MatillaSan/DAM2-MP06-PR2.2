@@ -124,7 +124,6 @@ public class Manager {
             obj.setNom(nom);
             obj.setPais(pais);
             obj.setCodiPostal(codiPostal);
-            obj.setCiutadans(ciutada);
             session.update(obj);
             tx.commit();
         } catch (HibernateException e) {
